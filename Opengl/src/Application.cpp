@@ -12,7 +12,7 @@ struct ShaderProgramSource
 };
 static ShaderProgramSource ParseShader(const std::string& filepath)
 {
-    std::ifstream stream(filepath);
+    std::ifstream stream(filepath);//打开指定路径的文件，准备读取内容
     enum class ShaderType
     {
         NONE = -1,VERTEX =0,FRAGMENT =1
